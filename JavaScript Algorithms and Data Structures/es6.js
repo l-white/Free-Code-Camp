@@ -146,3 +146,29 @@ let a = 8, b = 6;
 })();
 console.log(a); // 6
 console.log(b); // 8
+
+// #18: ES6: Write Concise Object Literal Declarations Using Simple Fields
+
+const createPerson = (name, age, gender) => {
+  "use strict";
+  ( {name, age, gender} );
+};
+console.log(createPerson("Zodiac Hasbro", 56, "male")); // returns a proper object
+
+// #19: ES6: Write Concise Declarative Functions with ES6
+
+const bicycle = {
+  gear: 2,
+  setGear (newGear) {
+    "use strict";
+    return this.gear = newGear;
+  }
+};
+bicycle.setGear(3);
+console.log(bicycle.gear);
+
+// #26: ES6: Import a Default Export
+
+"use strict";
+import subtract from "math_functions";
+subtract(7,4);
