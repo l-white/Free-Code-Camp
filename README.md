@@ -1,2 +1,2 @@
 # Free-Code-Camp
-Completed Challenges
+Completed Challenges from Algorithm Section
